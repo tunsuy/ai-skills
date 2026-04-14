@@ -19,6 +19,11 @@
 
 ```
 ai-skills/
+├── ai-blog-tracker/               # AI 公司博客追踪
+│   ├── SKILL.md                   # 主指令文件
+│   ├── _meta.json                 # 元信息
+│   └── references/                # 参考文档
+│       └── sources.md             # 信息源列表
 ├── brand-ui-builder/              # 品牌风格 UI 构建
 │   ├── SKILL.md                   # 主指令文件
 │   └── references/                # 参考文档
@@ -41,6 +46,7 @@ ai-skills/
 
 | Skill | 简介 | 版本 |
 |-------|------|------|
+| [ai-blog-tracker](ai-blog-tracker/) | AI 公司博客追踪 —— 抓取 Anthropic、OpenAI、Google DeepMind 等 10+ 家 AI 公司的官方博客，生成分类聚合的中文技术简报 | v1.0.0 |
 | [brand-ui-builder](brand-ui-builder/) | 品牌风格 UI 构建 —— 使用 DESIGN.md 让 AI 生成匹配知名品牌设计风格的 UI（Claude、Vercel、Notion、Stripe、Apple 等） | v1.0.0 |
 | [self-evolving-skills](self-evolving-skills/) | Agent 自我进化机制 —— 将成功的复杂任务沉淀为可复用的 Skill，实现持续学习和知识积累 | v1.0.0 |
 | [trump-news-tracker](trump-news-tracker/) | 新闻动态追踪 —— 多源聚合、去重分类、生成中文简报 | v1.0.0 |
@@ -73,6 +79,7 @@ your-project/
 
 在与 AI Agent 对话时，满足 Skill 的触发条件即可自动加载：
 
+- 说 **"AI 博客最新动态"** 或 **"各大 AI 公司最近发了什么"** → 触发 `ai-blog-tracker`
 - 说 **"构建一个像 Vercel 一样的页面"** → 触发 `brand-ui-builder`
 - 完成复杂任务后 Agent 自动评估 → 触发 `self-evolving-skills`
 - 说 **"Trump 最新动态"** → 触发 `trump-news-tracker`
