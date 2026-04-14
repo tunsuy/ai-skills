@@ -19,7 +19,7 @@
 
 ```
 ai-skills/
-├── design-md/                     # 品牌风格 UI 构建
+├── brand-ui-builder/              # 品牌风格 UI 构建
 │   ├── SKILL.md                   # 主指令文件
 │   └── references/                # 参考文档
 │       └── brand-catalog.md       # 品牌设计目录
@@ -41,7 +41,7 @@ ai-skills/
 
 | Skill | 简介 | 版本 |
 |-------|------|------|
-| [design-md](design-md/) | 品牌风格 UI 构建 —— 使用 DESIGN.md 让 AI 生成匹配知名品牌设计风格的 UI（Claude、Vercel、Notion、Stripe、Apple 等） | v1.0.0 |
+| [brand-ui-builder](brand-ui-builder/) | 品牌风格 UI 构建 —— 使用 DESIGN.md 让 AI 生成匹配知名品牌设计风格的 UI（Claude、Vercel、Notion、Stripe、Apple 等） | v1.0.0 |
 | [self-evolving-skills](self-evolving-skills/) | Agent 自我进化机制 —— 将成功的复杂任务沉淀为可复用的 Skill，实现持续学习和知识积累 | v1.0.0 |
 | [trump-news-tracker](trump-news-tracker/) | 新闻动态追踪 —— 多源聚合、去重分类、生成中文简报 | v1.0.0 |
 
@@ -61,7 +61,7 @@ git clone <repo-url> ai-skills
 # 项目级别
 your-project/
 ├── .agent/skills/
-│   └── design-md/          ← 从本仓库复制
+│   └── brand-ui-builder/      ← 从本仓库复制
 └── ...
 
 # 用户级别
@@ -73,7 +73,7 @@ your-project/
 
 在与 AI Agent 对话时，满足 Skill 的触发条件即可自动加载：
 
-- 说 **"构建一个像 Vercel 一样的页面"** → 触发 `design-md`
+- 说 **"构建一个像 Vercel 一样的页面"** → 触发 `brand-ui-builder`
 - 完成复杂任务后 Agent 自动评估 → 触发 `self-evolving-skills`
 - 说 **"Trump 最新动态"** → 触发 `trump-news-tracker`
 

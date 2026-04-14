@@ -1,5 +1,5 @@
 ---
-name: design-md
+name: brand-ui-builder
 description: 构建品牌风格 UI/网页（Claude、Vercel、Notion、Stripe、Apple、Tesla 等知名品牌）。当用户说"XX风格的网页"、"像XX一样的页面"、"仿XX设计"、"构建一个看起来像XX的页面"时触发此 Skill。
 version: 1.0.0
 ---
