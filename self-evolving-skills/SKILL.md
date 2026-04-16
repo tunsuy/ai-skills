@@ -2,11 +2,6 @@
 name: self-evolving-skills
 description: Agent 自我进化机制 - 将成功的复杂任务沉淀为可复用的 Skill，实现持续学习和知识积累。
 version: 1.0.0
-author: Hermes Agent
-metadata:
-  hermes:
-    tags: [Agent, Self-Evolution, Skills, Procedural-Memory, Knowledge-Management]
-    related_skills: [plan, systematic-debugging, test-driven-development]
 ---
 
 # Self-Evolving Skills - Agent 自我进化机制

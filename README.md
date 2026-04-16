@@ -38,6 +38,11 @@ ai-skills/
 │   ├── _meta.json                 # 元信息
 │   └── references/                # 参考文档
 │       └── sources.md             # 信息源列表
+├── wechat-article-optimizer/      # 微信公众号文章创作助手
+│   ├── SKILL.md                   # 主指令文件
+│   ├── _meta.json                 # 元信息
+│   └── references/                # 参考文档
+│       └── optimization-rules.md  # 推荐算法规则参考
 ├── .gitignore
 └── README.md
 ```
@@ -50,6 +55,7 @@ ai-skills/
 | [brand-ui-builder](brand-ui-builder/) | 品牌风格 UI 构建 —— 使用 DESIGN.md 让 AI 生成匹配知名品牌设计风格的 UI（Claude、Vercel、Notion、Stripe、Apple 等） | v1.0.0 |
 | [self-evolving-skills](self-evolving-skills/) | Agent 自我进化机制 —— 将成功的复杂任务沉淀为可复用的 Skill，实现持续学习和知识积累 | v1.0.0 |
 | [trump-news-tracker](trump-news-tracker/) | 新闻动态追踪 —— 多源聚合、去重分类、生成中文简报 | v1.0.0 |
+| [wechat-article-optimizer](wechat-article-optimizer/) | 微信公众号文章创作与优化助手 —— 支持从零创作和已有文章优化两种模式，按微信2026年推荐算法规则覆盖标题、结构、SEO、互动引导、AIGC降痕等全维度 | v2.1.0 |
 
 ## 快速使用
 
@@ -83,6 +89,8 @@ your-project/
 - 说 **"构建一个像 Vercel 一样的页面"** → 触发 `brand-ui-builder`
 - 完成复杂任务后 Agent 自动评估 → 触发 `self-evolving-skills`
 - 说 **"Trump 最新动态"** → 触发 `trump-news-tracker`
+- 说 **"帮我写一篇关于XX的文章"** 或 **"写篇公众号推文"** → 触发 `wechat-article-optimizer`（创作模式）
+- 贴一篇文章并说 **"帮我优化一下"** 或 **"帮我改改这篇文章"** → 触发 `wechat-article-optimizer`（优化模式）
 
 ## Skill 规范
 
