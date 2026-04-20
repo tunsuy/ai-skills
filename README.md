@@ -33,6 +33,16 @@ ai-skills/
 │   ├── references/                # 参考文档
 │   ├── scripts/                   # 辅助脚本
 │   └── templates/                 # 模板文件
+├── skill-creator-meta/            # Skill 元生成器（Meta Creator）
+│   ├── SKILL.md                   # 主指令文件
+│   ├── README.md                  # 说明文档
+│   └── references/                # 参考文档
+│       ├── templates/             # 模板文件
+│       │   ├── creator_checklist.md           # Creator 质量检查清单
+│       │   └── methodology_extraction_guide.md # 方法论提炼指南
+│       └── strategies/            # 策略文件
+│           ├── flow_patterns.md   # 四种流程模式参考
+│           └── memory_patterns.md # Memory 系统设计模式
 ├── trump-news-tracker/            # 新闻动态追踪
 │   ├── SKILL.md                   # 主指令文件
 │   ├── _meta.json                 # 元信息
@@ -54,6 +64,7 @@ ai-skills/
 | [ai-blog-tracker](ai-blog-tracker/) | AI 公司博客追踪 —— 抓取 Anthropic、OpenAI、Google DeepMind 等 10+ 家 AI 公司的官方博客，生成分类聚合的中文技术简报 | v1.0.0 |
 | [brand-ui-builder](brand-ui-builder/) | 品牌风格 UI 构建 —— 使用 DESIGN.md 让 AI 生成匹配知名品牌设计风格的 UI（Claude、Vercel、Notion、Stripe、Apple 等） | v1.0.0 |
 | [self-evolving-skills](self-evolving-skills/) | Agent 自我进化机制 —— 将成功的复杂任务沉淀为可复用的 Skill，实现持续学习和知识积累 | v1.0.0 |
+| [skill-creator-meta](skill-creator-meta/) | Skill 元生成器（Meta Creator）—— 将任意领域的方法论/工作流编译为可执行的 AI Creator，支持四种流程模式、Memory 系统原生、双模式自适应 | v1.0.0 |
 | [trump-news-tracker](trump-news-tracker/) | 新闻动态追踪 —— 多源聚合、去重分类、生成中文简报 | v1.0.0 |
 | [wechat-article-optimizer](wechat-article-optimizer/) | 微信公众号文章创作与优化助手 —— 支持从零创作和已有文章优化两种模式，按微信2026年推荐算法规则覆盖标题、结构、SEO、互动引导、AIGC降痕等全维度 | v2.1.0 |
 
@@ -88,6 +99,7 @@ your-project/
 - 说 **"AI 博客最新动态"** 或 **"各大 AI 公司最近发了什么"** → 触发 `ai-blog-tracker`
 - 说 **"构建一个像 Vercel 一样的页面"** → 触发 `brand-ui-builder`
 - 完成复杂任务后 Agent 自动评估 → 触发 `self-evolving-skills`
+- 说 **"帮我做一个投资研究 Creator"** 或 **"把我的 XX 流程变成 Skill"** → 触发 `skill-creator-meta`
 - 说 **"Trump 最新动态"** → 触发 `trump-news-tracker`
 - 说 **"帮我写一篇关于XX的文章"** 或 **"写篇公众号推文"** → 触发 `wechat-article-optimizer`（创作模式）
 - 贴一篇文章并说 **"帮我优化一下"** 或 **"帮我改改这篇文章"** → 触发 `wechat-article-optimizer`（优化模式）
