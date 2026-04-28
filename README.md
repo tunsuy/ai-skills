@@ -24,6 +24,11 @@ ai-skills/
 │   ├── _meta.json                 # 元信息
 │   └── references/                # 参考文档
 │       └── sources.md             # 信息源列表
+├── github-trending/               # GitHub 开源项目趋势追踪
+│   ├── SKILL.md                   # 主指令文件
+│   ├── _meta.json                 # 元信息
+│   └── references/                # 参考文档
+│       └── sources.md             # 数据源参考（URL 格式、API 端点、语言对照表）
 ├── brand-ui-builder/              # 品牌风格 UI 构建
 │   ├── SKILL.md                   # 主指令文件
 │   └── references/                # 参考文档
@@ -62,6 +67,7 @@ ai-skills/
 | Skill | 简介 | 版本 |
 |-------|------|------|
 | [ai-blog-tracker](ai-blog-tracker/) | AI 公司博客追踪 —— 抓取 Anthropic、OpenAI、Google DeepMind 等 10+ 家 AI 公司的官方博客，生成分类聚合的中文技术简报 | v1.0.0 |
+| [github-trending](github-trending/) | GitHub 开源项目趋势追踪 —— 抓取 GitHub Trending 数据并结合 API 补充详情，按 Star 增长排名生成带趋势分析的中文报告，支持按时间范围和语言筛选 | v1.0.0 |
 | [brand-ui-builder](brand-ui-builder/) | 品牌风格 UI 构建 —— 使用 DESIGN.md 让 AI 生成匹配知名品牌设计风格的 UI（Claude、Vercel、Notion、Stripe、Apple 等） | v1.0.0 |
 | [self-evolving-skills](self-evolving-skills/) | Agent 自我进化机制 —— 将成功的复杂任务沉淀为可复用的 Skill，实现持续学习和知识积累 | v1.0.0 |
 | [skill-creator-meta](skill-creator-meta/) | Skill 元生成器（Meta Creator）—— 将任意领域的方法论/工作流编译为可执行的 AI Creator，支持四种流程模式、Memory 系统原生、双模式自适应 | v1.0.0 |
@@ -101,6 +107,7 @@ your-project/
 - 完成复杂任务后 Agent 自动评估 → 触发 `self-evolving-skills`
 - 说 **"帮我做一个投资研究 Creator"** 或 **"把我的 XX 流程变成 Skill"** → 触发 `skill-creator-meta`
 - 说 **"Trump 最新动态"** → 触发 `trump-news-tracker`
+- 说 **"GitHub 最近热门项目"** 或 **"这周 trending"** 或 **"Python 热门开源项目"** → 触发 `github-trending`
 - 说 **"帮我写一篇关于XX的文章"** 或 **"写篇公众号推文"** → 触发 `wechat-article-optimizer`（创作模式）
 - 贴一篇文章并说 **"帮我优化一下"** 或 **"帮我改改这篇文章"** → 触发 `wechat-article-optimizer`（优化模式）
 
