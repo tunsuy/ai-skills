@@ -64,6 +64,11 @@ ai-skills/
 │   ├── _meta.json                 # 元信息
 │   └── references/                # 参考文档
 │       └── optimization-rules.md  # 推荐算法规则参考
+├── openwiki-docs/                 # OpenWiki 兼容的 Agent 代码知识库
+│   ├── SKILL.md                   # 主指令文件
+│   ├── _meta.json                 # 元信息
+│   ├── references/                # wiki 结构与 AGENTS 引用块
+│   └── scripts/                   # git 增量变更脚本
 ├── .gitignore
 └── README.md
 ```
@@ -80,6 +85,7 @@ ai-skills/
 | [skill-creator-meta](skill-creator-meta/) | Skill 元生成器（Meta Creator）—— 将任意领域的方法论/工作流编译为可执行的 AI Creator，支持四种流程模式、Memory 系统原生、双模式自适应 | v1.0.0 |
 | [trump-news-tracker](trump-news-tracker/) | 新闻动态追踪 —— 多源聚合、去重分类、生成中文简报 | v1.0.0 |
 | [wechat-article-optimizer](wechat-article-optimizer/) | 微信公众号文章创作与优化助手 —— 支持从零创作和已有文章优化两种模式，按微信2026年推荐算法规则覆盖标题、结构、SEO、互动引导、AIGC降痕等全维度 | v2.1.0 |
+| [openwiki-docs](openwiki-docs/) | OpenWiki 兼容的 Agent 代码知识库 —— 在仓库生成 `openwiki/`，挂接 `AGENTS.md`/`CLAUDE.md`，支持 init 与基于 git diff 的增量更新；走 IDE 模型，无需额外 API Key | v1.0.0 |
 
 ## 快速使用
 
@@ -118,6 +124,7 @@ your-project/
 - 说 **"如何构建长时间运行的 Agent"** 或 **"Agent 架构设计"** 或 **"Agent 对齐漂移怎么办"** → 触发 `long-running-agent-guide`
 - 说 **"帮我写一篇关于XX的文章"** 或 **"写篇公众号推文"** → 触发 `wechat-article-optimizer`（创作模式）
 - 贴一篇文章并说 **"帮我优化一下"** 或 **"帮我改改这篇文章"** → 触发 `wechat-article-optimizer`（优化模式）
+- 说 **"初始化 openwiki"** / **"更新 openwiki"** / **"生成 agent 代码知识库"** → 触发 `openwiki-docs`
 
 ## Skill 规范
 
